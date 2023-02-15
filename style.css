@@ -29,7 +29,7 @@
 }
 
 .link-cabecalho {
-    font-size: 14px;
+    font-size: 15px;
     color: #fff;
     display: inline;
     margin-right: 20px;
@@ -178,7 +178,14 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    font-size: 14px;
+    font-size: 15px;
+}
+.frase-rodape a {
+    text-decoration: none;
+    color: black;
+}
+.frase-rodape a:hover {
+    text-decoration: underline;
 }
 @media(min-width: 741px) and (max-width: 780px) {
     h1 {
@@ -299,7 +306,8 @@ li {
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .frase-rodape span {
+    .frase-rodape span,
+    .frase-rodape a {
         padding: 2px;
     }
 }
@@ -323,7 +331,8 @@ li {
     #titulo-inferior, #titulo-meio{
         font-size: 27px;
     }
-    .frase-rodape span {
+    .frase-rodape span,
+    .frase-rodape a {
         font-size: 13px;
     }
 }
