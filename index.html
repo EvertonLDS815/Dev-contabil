@@ -117,18 +117,22 @@
             inclusive sugerindo incorporação ou desmembramento de atividades.
         </p>
         <div class="frase-rodape">
-            <span>© 2023 - Todos os Direitos Reservados</span>
-            <a href="https://everton-l-portifolio.onrender.com">Desenvolvido por EL Tutoriais</a>
+            <span id="date"></span>
+            <a href="https://my-port-el.netlify.app">Desenvolvido por EL Tutoriais</a>
         </div>
     </div>
 
 </body>
 <script>
-    let formulario = document.getElementById("formulario-contato")
-    let titulo = document.querySelector('h1')
+    const dateNow = document.getElementById("date");
+    let formulario = document.getElementById("formulario-contato");
     function getForm() {
-        formulario.classList.toggle('mostrar-formulario')
+        formulario.classList.toggle('mostrar-formulario');
     }
+
+    const myYear = new Date();
+    const year = myYear.getFullYear();
+    dateNow.innerHTML = `© ${year} - Todos os Direitos Reservados`
 </script>
 
 </html>
